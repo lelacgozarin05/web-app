@@ -16,15 +16,20 @@ app.get('/help', (req, res) => {
         name: 'maricar'
     }])
 })
-
+ 
 
 
 app.get('/about', (req, res) => {
-    res.send('About')
+    res.send('<h1>About</h1>')
 })
 
+
+
 app.get('/weather', (req, res) => {
-    res.send('Your Weather')
+    res.send({
+        forecast: 'It is snowing',
+        location: 'Philadelphia'
+    })
 })
 //app.com
 app.listen(3000, () => {
