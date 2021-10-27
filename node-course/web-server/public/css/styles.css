@@ -16,7 +16,6 @@ body {
 .main-content {
     flex-grow: 1;
     align-items: center;
-
 }
 
     footer {
@@ -47,6 +46,7 @@ body {
 
     .portrait  {
         width: 250px;
+        border-radius: 100px;
        
 
     }
