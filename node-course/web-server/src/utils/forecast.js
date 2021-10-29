@@ -9,6 +9,7 @@ const forecast = (longitude, latitude, callback) => {
             } else if (body.error) {
                     callback('Unable to find location', Undefined)
             } else {
+        
                     callback(undefined,body.location.localtime + '' + body.current.temperature + '\xB0' + 'c' + ' ' + body.current.weather_descriptions [0] + '') // degress out. It feels like ' + body.current.feelslike + ' degress out ')
             }
           })
