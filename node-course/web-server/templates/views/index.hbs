@@ -3,33 +3,27 @@
 <html>
 
 <head>
-    <title>Weather</title>
-    <link rel="icon"href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css">
- 
-
-    </head>
+  <title>Weather</title>
+  <link rel="icon"href="/img/weather.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
 
 <body>
-    <div class="main-content">
-       
-        {{>header}}
-        <p> Use this site to get your weather!</p>
-
+  <div class="main-content">
+    {{>header}}
+      <p> Use this site to get your weather!</p>
         <form>
-            <input placeholder="Location">
-            <button>Search</button>
+          <input placeholder="Location">
+          <button>Search</button>
         </form>
+        <div>
         <p id="message-1"></p>
+        <p class="text-center"><span id="weekday"></span>, &nbsp; <span id="month"></span> &nbsp; <span id="day"></span></p>
         <p id="message-2"></p>
-        <p id="message-3"></p>
-        <p id="message-4"></p>
-    </div>
-    
-    {{>footer}}
-    
-    <script src="/js/app.js"></script>
-
+        </div>
+  </div> 
+    {{>footer}}  
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
